@@ -8,7 +8,12 @@ const TextSize = ({ as, children } ) => {
       return <h3 className={as}>{children}</h3>;
     case "p":
       return <p className={as}>{children}</p>;
-    
+    case "numberBig":
+      return <p className={as}>{children}</p>;
+    case "numberSmall":
+      return <p className={as}>{children}</p>;
+      case "followerStyle":
+        return <p className={as}>{children}</p>;
     default:
       return <h1 className={as}>{children}</h1>;  
     break;  

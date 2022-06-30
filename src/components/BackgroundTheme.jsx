@@ -20,7 +20,7 @@ const BackgroundTheme = ({ children }) => {
         onChange = {onChange}
       />
       <label className='form-check-label' htmlFor='customSwitches'>
-        Toggle this switch element
+        Dark Mode
       </label>
       {children}
     </div>
@@ -28,5 +28,4 @@ const BackgroundTheme = ({ children }) => {
 };
   
 
- 
  export default BackgroundTheme

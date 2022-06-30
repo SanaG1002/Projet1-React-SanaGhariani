@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-:root {
-  --min-width: 37.5rem;
-  --min-width: 144.0rem;
-}
-
+/*Page*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
 
 body {
   font-size: 14px;
   font-family: 'Inter', sans-serif;
-  display: grid;
-  place-items: center;
+  margin: 50px;
 }
 
 code {
@@ -27,15 +19,7 @@ code {
     monospace;
 }
 
-.card-small {
-  width: 50%;
-  color: black;
-  border-radius: 10px;
-  background-color: hsl(225, 100%, 98%);
-  padding : 20px;
-  margin: 10px;
-}
-
+/*Style font*/
 .numberBig {
   font-size: 50px;
   font-weight: bold;
@@ -46,50 +30,113 @@ code {
   font-weight: bold;
 }
 
+.followerStyle {
+  text-transform: uppercase;
+  color: black;
+}
+
+.colorGreen {
+  color: green;
+}
+
+.colorRed {
+  color: red;
+}
+
+/*Dark page*/
+.dark-theme {
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+
+.dark-theme 
 .bgHovered {
-  background-color: #dad9d9;
-  color: black;
+  background-color: rgb(28, 13, 65);
+  color: white;
   border-radius: 10px;
   padding : 20px;
   margin: 10px;
+  width: 30%;
+  height: 300px;
 }
 
-
-.smHovered {
-  background-color: #d5adad;
-  color: black;
-  border-radius: 10px;
-  padding : 20px;
-  margin: 10px;
-}
-
-
+.dark-theme 
 .bgSetHovered {
-  background-color: #9a9a9a;
-  color: black;
+  background-color: rgb(46, 29, 88);
+  color: white;
   border-radius: 10px;
   padding : 20px;
   margin: 10px;
+  width: 30%;
+  height: 300px;
 }
 
+.dark-theme 
+.smHovered {
+  background-color: #503030;
+  color: white;
+  border-radius: 10px;
+  padding : 20px;
+  margin: 10px;
+  width: 30%;
+}
 
+.dark-theme 
 .smSetHovered {
-  background-color: #c28888;
-  color: black;
+  background-color: #684040;;
+  color: white;
   border-radius: 10px;
   padding : 20px;
   margin: 10px;
+  width: 30%;
 }
 
+
+/*Light page*/
 .light-theme {
   background-color: white;
   color: black;
 }
 
-.dark-theme {
-  background-color: black;
-  color: white;
+.light-theme 
+.bgHovered {
+  background-color: rgb(189, 170, 237);
+  color: black;
+  border-radius: 10px;
+  padding : 20px;
+  margin: 10px;
+  width: 30%;
+  height: 300px;
 }
 
+.light-theme 
+.bgSetHovered {
+  background-color: rgb(152, 135, 193);
+  color: black;
+  border-radius: 10px;
+  padding : 20px;
+  margin: 10px;
+  width: 30%;
+  height: 300px;
+}
 
+.light-theme 
+.smHovered {
+  background-color: #c4a6a6;
+  color: black;
+  border-radius: 10px;
+  padding : 20px;
+  margin: 10px;
+  width: 30%;
+}
+
+.light-theme 
+.smSetHovered {
+  background-color: #c28888;;
+  color: black;
+  border-radius: 10px;
+  padding : 20px;
+  margin: 10px;
+  width: 30%;
+}
 

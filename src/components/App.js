@@ -1,13 +1,8 @@
-
-
-import Container from "./Container";
 import TextSize from "./TextSize";
 import BackgroundTheme from "./BackgroundTheme"; 
 import CardBig  from "./CardBig";
 import CardSmall from "./CardSmall";
-import PercentCardeSmall from "./PercentCardeSmall";
-import NumberCardBig from "./NumberCardBig";
-import NumberCardSmall from "./NumberCardSmall";
+import PercentStyle from "./PercentStyle";
 import FacebookComponent from "./FacebookComponent";
 import YoutubeComponent from "./YoutubeComponent";
 import TwiterComponent from "./TwiterComponent";
@@ -18,7 +13,7 @@ import DisplayPage  from "./DisplayPage";
 function App() {
   return (
     <div className="App">
-      <Container>
+ 
         <BackgroundTheme>
           <DisplayPage as="displayHead">
             <DisplayPage as="displayTitle"> 
@@ -31,25 +26,33 @@ function App() {
           <CardBig > 
             <FacebookComponent /> 
             <TextSize as="p">@nathanf</TextSize>
-            <NumberCardBig >1987</NumberCardBig >
+            <TextSize as="numberBig">1987</TextSize >
+            <TextSize as="followerStyle">Followers </TextSize>
+            <PercentStyle as="colorGreen">12 Today </PercentStyle>
           </CardBig>
 
           <CardBig > 
             <TwiterComponent /> 
             <TextSize as="p">@nathanf</TextSize>
-            <NumberCardBig >1044</NumberCardBig >
+            <TextSize as="numberBig" >1044</TextSize >
+            <TextSize as="followerStyle">Followers </TextSize>
+            <PercentStyle as="colorGreen">99 Today </PercentStyle>
           </CardBig>
 
           <CardBig > 
             <InstagramComponent />
             <TextSize as="p">@realnathanf</TextSize>
-            <NumberCardBig >11k</NumberCardBig >
+            <TextSize as="numberBig">11k</TextSize >
+            <TextSize as="followerStyle">Followers </TextSize>
+            <PercentStyle as="colorGreen">1099 Today </PercentStyle>
           </CardBig>
 
           <CardBig > 
             <YoutubeComponent />
             <TextSize as="p">Nathan F.</TextSize> 
-            <NumberCardBig >8239</NumberCardBig >
+            <TextSize as="numberBig">8239</TextSize >
+            <TextSize as="followerStyle">Followers </TextSize>
+            <PercentStyle as="colorRed">144 Today </PercentStyle>
           </CardBig>
           </DisplayPage>
 
@@ -59,29 +62,29 @@ function App() {
           <CardSmall>
             <TextSize as="p">Page Views </TextSize>
             <FacebookComponent /> 
-            <NumberCardSmall >87</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">87</TextSize >
+            <PercentStyle as="colorGreen">3% </PercentStyle>
           </CardSmall>
 
           <CardSmall>
             <TextSize as="p">Likes </TextSize>
             <FacebookComponent />   
-            <NumberCardSmall >52</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">52</TextSize >
+            <PercentStyle as="colorRed">2% </PercentStyle>
           </CardSmall>
 
           <CardSmall>
             <TextSize as="p">Likes </TextSize>
             <InstagramComponent />  
-            <NumberCardSmall >5462</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">5462</TextSize >
+            <PercentStyle as="colorGreen">2257% </PercentStyle> 
           </CardSmall>
 
           <CardSmall>
             <TextSize as="p">Profile Views</TextSize>
             <InstagramComponent /> 
-            <NumberCardSmall >52k</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">52k</TextSize >
+            <PercentStyle as="colorGreen">1375%</PercentStyle>
           </CardSmall>
           
           </DisplayPage>
@@ -90,33 +93,32 @@ function App() {
           <CardSmall>
             <TextSize as="p">Retweets</TextSize>
             <TwiterComponent />  
-            <NumberCardSmall >117</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">117</TextSize >
+            <PercentStyle as="colorGreen">303% </PercentStyle> 
           </CardSmall>
 
           <CardSmall>
             <TextSize as="p">Likes</TextSize>
             <TwiterComponent />  
-            <NumberCardSmall>507</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">507</TextSize >
+            <PercentStyle as="colorGreen">553% </PercentStyle> 
           </CardSmall>
 
           <CardSmall>
             <TextSize as="p">Likes</TextSize>
             <YoutubeComponent />  
-            <NumberCardSmall >107</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">107</TextSize >
+            <PercentStyle as="colorRed">19% </PercentStyle>
           </CardSmall>
 
           <CardSmall>
             <TextSize as="p">Total Views</TextSize>
             <YoutubeComponent />  
-            <NumberCardSmall >1407</NumberCardSmall >
-            <PercentCardeSmall /> 
+            <TextSize as="numberSmall">1407</TextSize >
+            <PercentStyle as="colorRed">12% </PercentStyle>
           </CardSmall>
           </DisplayPage>
         </BackgroundTheme>
-      </Container>
      
     </div>
   );
